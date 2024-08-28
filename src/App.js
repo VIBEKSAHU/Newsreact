@@ -1,7 +1,7 @@
 import "./App.css";
 // import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState,useEffect} from "react";
+import { useState} from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import Footer from "./components/Footer";
