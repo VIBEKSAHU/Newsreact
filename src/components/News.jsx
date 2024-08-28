@@ -8,9 +8,9 @@ export default function News(props) {
 
   const [news, setNews] = useState([])
   const getNews = async () => {
-    axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&language=en&apiKey=e380c8192e2546e6a6ad7d6a9b0c3bac`).then((r) => setNews(r.data.articles));
+    axios.get(` https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=e380c8192e2546e6a6ad7d6a9b0c3bac`).then((r) => setNews(r.data.articles));
   };
-
+  // https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=e380c8192e2546e6a6ad7d6a9b0c3bac
 
   useEffect(() => {
     getNews()

@@ -69,10 +69,10 @@ li{
   text-decoration: none;
 }
 .menu ul li:hover{
-  transform-origin: left;
+  /* transform-origin: left; */
   text-decoration: none;
   transition: 0.5s;
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(38, 116, 167);
   
 }
 /* NAVBAR ENDS */
@@ -197,6 +197,13 @@ p.add{
   align-items: center;
   font-size: 25px;
 }
+.first{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 

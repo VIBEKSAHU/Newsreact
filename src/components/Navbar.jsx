@@ -1,15 +1,19 @@
 
 
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Navbar(props) {
+  
 
 
 
   return (
     <>
-    <div>contact</div>
       <nav className="mainbar">
+        <div className="first">
+         <Link to={"/Contact"}>contact</Link>
+         <Link to={"/About"}>AboutUs</Link>
+       </div>
         <div className="logo">
           <h2>
             <span>S</span>aandar
@@ -21,7 +25,7 @@ export default function Navbar(props) {
             <li>
               <button
                 className="bt"
-                onClick={() => {
+                onClick={() =>{
                   props.setCategory("general");
                 }}
               >
