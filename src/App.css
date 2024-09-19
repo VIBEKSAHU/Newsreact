@@ -84,6 +84,7 @@ li{
 div.content{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: ma;
   grid-gap: 3rem;
 }
   

@@ -10,17 +10,8 @@ import About from "./components/About";
 
 function App() {
 
+
   const [category, setCategory] = useState("general");
-
-//   const [weather, setWeather] = useState()
-//   const getWeather = async () => {
-//     axios.get("http://api.weatherapi.com/v1/forecast.json?key=09a0526c06174347a4f125728222912&q=jamshedpur&days=1&aqi=no&alerts=no").then((r) => setWeather(r.data.location));
-//   };
-
-//   console.log(weather)
-// useEffect(() => {
-//   getWeather()
-// }, [])
 
 
   return (
