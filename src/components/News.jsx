@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react';
 export default function News(props) {
   
   const apiKey = process.env.REACT_APP_SECRET_CODE;
- 
+  // console.log(apiKey);
+
   
   const [news, setNews] = useState([])
   const getNews = async () => {
