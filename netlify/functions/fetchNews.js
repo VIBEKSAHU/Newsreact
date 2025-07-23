@@ -1,20 +1,21 @@
 const fetch = require('node-fetch');
 
 exports.handler = async function(event, context) {
-  console.log("Function triggered");
   try {
     const apiKey = process.env.REACT_APP_SECRET_CODE;
-    console.log("API Key:", apiKey);
-
     const { country = 'us', category = 'general' } = event.queryStringParameters;
-    console.log("Query params:", { country, category });
-
     const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
-    console.log("Fetching URL:", url);
 
     const response = await fetch(url);
     const data = await response.json();
-    console.log("Data fetched:", data);
+
+    if (data.status === 'error') {
+      console.error("NewsAPI error:", data);
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ error: data.message || "Error fetching news." }),
+      };
+    }
 
     return {
       statusCode: 200,

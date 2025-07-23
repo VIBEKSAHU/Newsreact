@@ -1,52 +1,46 @@
-
 import axios from 'axios';
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default function News(props) {
-  
-  // const apiKey = process.env.REACT_APP_SECRET_CODE;
-  // console.log(apiKey);
+export default function News() {
+  const [news, setNews] = useState([]);
+  const [error, setError] = useState(null);
 
-  
-  const [news, setNews] = useState([])
   const getNews = async () => {
-    // axios.get(` https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${apiKey}`).then((r) => setNews(r.data.articles));
-    axios.get(`/api/fetchNews?country=us&category=business`)
-  .then((r) => setNews(r.data.articles))
-  .catch((error) => console.error(error));
-
+    try {
+      const response = await axios.get(`/api/fetchNews?country=us&category=business`);
+      if (response.data.articles) {
+        setNews(response.data.articles);
+      } else {
+        console.error("API returned error:", response.data);
+        setError(response.data.error || "Failed to fetch news.");
+      }
+    } catch (error) {
+      console.error("Error fetching news:", error);
+      setError(error.message || "Error fetching news.");
+    }
   };
 
-
-    useEffect(() => {
+  useEffect(() => {
     getNews();
-  }, []); // added [] to avoid infinite calls
- 
+  }, []);
 
   return (
-    <>
-
-      <div className="content">
-        {
-          news.map((e) => {
-            return <>
-              <div className="main">
-                <img src={e.urlToImage} alt="" />
-                <h6 className='a'>{e.title}</h6>
-
-                <div className="a">
-                  <p className='desc' >{e.description}</p></div>
-                <button className="btn"><a href={e.url}>view more</a></button>
-
-              </div>
-            </>
-          })
-        }
-      </div>
-
-
-
-    </>
-  )
+    <div className="content">
+      {error && <p style={{ color: 'red', textAlign: 'center', fontWeight: 'bold' }}>{error}</p>}
+      {news && news.length > 0 ? (
+        news.map((e, index) => (
+          <div className="main" key={index}>
+            <img src={e.urlToImage} alt={e.title} />
+            <h6 className='a'>{e.title}</h6>
+            <div className="a">
+              <p className='desc'>{e.description}</p>
+            </div>
+            <button className="btn">
+              <a href={e.url} target="_blank" rel="noopener noreferrer">View more</a>
+            </button>
+          </div>
+        ))
+      ) : !error && <p style={{ textAlign: 'center' }}>Loading news...</p>}
+    </div>
+  );
 }
