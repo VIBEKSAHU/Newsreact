@@ -3,8 +3,9 @@ const fetch = require('node-fetch');
 exports.handler = async function(event, context) {
   try {
     const apiKey = process.env.REACT_APP_SECRET_CODE;
-    const { country = 'us', category = 'general' } = event.queryStringParameters;
-    const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
+    // const { country = 'IN', category = 'general' } = event.queryStringParameters;
+    // const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
+    const url = `https://api.currentsapi.services/v1/latest-news?apiKey=${apiKey}`
 
     const response = await fetch(url);
     const data = await response.json();
