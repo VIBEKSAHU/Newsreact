@@ -8,8 +8,8 @@ export default function News() {
   const getNews = async () => {
     try {
       const response = await axios.get(`/api/fetchNews`);
-      if (response.data.articles) {
-        setNews(response.data.articles);
+      if (response.data.news) {
+        setNews(response.data.news);
       } else {
         console.error("API returned error:", response.data);
         setError(response.data.error || "Failed to fetch news.");
@@ -30,7 +30,7 @@ export default function News() {
       {news && news.length > 0 ? (
         news.map((e, index) => (
           <div className="main" key={index}>
-            <img src={e.urlToImage} alt={e.title} />
+            <img src={e.image} alt={e.title} />
             <h6 className='a'>{e.title}</h6>
             <div className="a">
               <p className='desc'>{e.description}</p>
