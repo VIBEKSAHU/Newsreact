@@ -7,7 +7,7 @@ export default function News() {
 
   const getNews = async () => {
     try {
-      const response = await axios.get(`/api/fetchNews?country=us&category=business`);
+      const response = await axios.get(`/api/fetchNews`);
       if (response.data.articles) {
         setNews(response.data.articles);
       } else {
