@@ -4,7 +4,7 @@
   "description": "Stay updated with the latest news from around the world. Get real-time updates on technology, sports, business, entertainment, health, and science.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
