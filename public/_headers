@@ -1,0 +1,42 @@
+# Netlify Headers File
+# Place this in your /public folder as "_headers"
+
+
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  
+  # Performance Headers
+  Cache-Control: public, max-age=31536000, immutable
+  
+# API Routes
+/.netlify/functions/*
+  # CORS Headers for API
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Headers: Content-Type, Authorization
+  Access-Control-Allow-Methods: GET, POST, OPTIONS
+  Cache-Control: public, max-age=300
+
+# HTML Pages
+/*.html
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  
+  # SEO Headers
+  Cache-Control: public, max-age=3600
+  
+# Static Assets
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/favicon.ico
+  Cache-Control: public, max-age=86400
+
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json

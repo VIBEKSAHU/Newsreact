@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -14,7 +14,7 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +24,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>News App</title>
+    <!-- <title>News App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +39,705 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <!-- </body>
+</html> --> 
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#667eea" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  
+  <!-- Primary Meta Tags -->
+  <!-- <title>NewsReact - Stay Updated with Latest News | Real-time News App</title>
+  <meta name="title" content="NewsReact - Stay Updated with Latest News | Real-time News App" />
+  <meta name="description" content="Discover the latest news from around the world with NewsReact. Get real-time updates on technology, sports, business, entertainment, health, and science. Built with React and modern web technologies." />
+  <meta name="keywords" content="news, latest news, breaking news, world news, technology news, sports news, business news, entertainment news, React news app, real-time news" />
+  <meta name="author" content="Vibek Sahu" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://newzzzzzz.netlify.app/" /> -->
+  
+  <!-- Open Graph / Facebook -->
+  <!-- <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NewsReact" />
+  <meta property="og:url" content="https://newzzzzzz.netlify.app/" />
+  <meta property="og:title" content="NewsReact - Stay Updated with Latest News | Real-time News App" />
+  <meta property="og:description" content="Discover the latest news from around the world with NewsReact. Get real-time updates on technology, sports, business, entertainment, health, and science." />
+  <meta property="og:image" content="https://newzzzzzz.netlify.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NewsReact - Latest News Application" />
+  <meta property="og:locale" content="en_US" /> -->
+  
+  <!-- Twitter -->
+  <!-- <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://newzzzzzz.netlify.app/" />
+  <meta property="twitter:title" content="NewsReact - Stay Updated with Latest News | Real-time News App" />
+  <meta property="twitter:description" content="Discover the latest news from around the world with NewsReact. Get real-time updates on technology, sports, business, entertainment, health, and science." />
+  <meta property="twitter:image" content="https://newzzzzzz.netlify.app/twitter-image.png" />
+  <meta property="twitter:image:alt" content="NewsReact - Latest News Application" />
+  <meta property="twitter:creator" content="@vibeksahu" />
+  <meta property="twitter:site" content="@vibeksahu" />
+   -->
+  <!-- Icons -->
+  <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+  <link rel="manifest" href="/manifest.json" /> -->
+  
+  <!-- Preconnect to external domains for performance -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.currentsapi.services" /> -->
+  
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" /> -->
+  
+  <!-- DNS Prefetch for performance -->
+  <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" /> -->
+  
+  <!-- Structured Data for SEO -->
+  <!-- <script type="application/ld+json"> -->
+  <!-- {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NewsReact",
+    "description": "Stay updated with latest news from around the world",
+    "url": "https://newzzzzzz.netlify.app/",
+    "author": {
+      "@type": "Person",
+      "name": "Vibek Sahu",
+      "email": "vibeksahu055@gmail.com",
+      "url": "https://github.com/VIBEKSAHU"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NewsReact",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newzzzzzz.netlify.app/logo192.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://newzzzzzz.netlify.app/?category={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "sameAs": [
+      "https://github.com/VIBEKSAHU",
+      "https://linkedin.com/in/vibeksahu",
+      "https://instagram.com/vibeksahu_"
+    ]
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <!-- <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "NewsReact",
+    "description": "Real-time news application built with React",
+    "url": "https://newzzzzzz.netlify.app/",
+    "applicationCategory": "NewsApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Modern web browser with JavaScript enabled",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Vibek Sahu"
+    },
+    "screenshot": "https://newzzzzzz.netlify.app/screenshot.png"
+  }
+  </script> -->
+
+  <!-- Breadcrumb Schema (will be dynamically updated) -->
+  <!-- <script type="application/ld+json" id="breadcrumb-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://newzzzzzz.netlify.app/"
+      }
+    ]
+  }
+  </script> --> 
+
+  <!-- Performance hints -->
+  <!-- <link rel="prefetch" href="/api/fetchNews?category=general" /> -->
+  
+  <!-- Security headers -->
+  <!-- <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" /> -->
+  
+  <!-- Critical CSS (inline for performance) -->
+  <!-- <style> -->
+    <!-- /* Critical above-the-fold styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #0f0f23;
+      color: #2d3748;
+    }
+     -->
+    <!-- .loading-initial {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .navbar-container {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    /* Skip to main content for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 10000;
+      border-radius: 4px;
+    }
+    
+    .skip-link:focus {
+      top: 6px;
+    }
+  </style> -->
+
+  <!-- Google Analytics (replace with your tracking ID) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_TRACKING_ID', {
+      page_title: 'NewsReact - Latest News',
+      page_location: window.location.href,
+      content_group1: 'News App'
+    });
+  </script>
+</head> -->
+<!-- 
+<body>
+  <!-- Skip to main content for screen readers -->
+  <!-- <a href="#main-content" class="skip-link">Skip to main content</a> -->
+   
+  <!-- Initial loading screen -->
+  <!-- <div id="loading-initial" class="loading-initial">
+    <div>
+      <div>📰 NewsReact</div>
+      <div style="font-size: 0.9rem; margin-top: 8px; opacity: 0.8;">Loading latest news...</div>
+    </div>
+  </div> -->
+  
+  <!-- Main app root -->
+  <!-- <div id="root"></div> -->
+  
+  <!-- Structured data for news articles (dynamically updated) -->
+  <!-- <script type="application/ld+json" id="news-articles-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": []
+  }
+  </script> -->
+
+  <!-- Service Worker Registration -->
+  <!-- <script>
+    // Remove loading screen when React app loads
+    window.addEventListener('load', function() {
+      const loading = document.getElementById('loading-initial');
+      if (loading) {
+        loading.style.opacity = '0';
+        setTimeout(() => loading.remove(), 300);
+      }
+    }); -->
+
+    <!-- // Register service worker for PWA functionality -->
+    <!-- if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('SW registered: ', registration);
+          })
+          .catch(function(registrationError) {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    } -->
+
+    <!-- // Update structured data dynamically
+    function updateNewsSchema(articles) {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": articles.map((article, index) => ({
+          "@type": "NewsArticle",
+          "position": index + 1,
+          "headline": article.title,
+          "description": article.description,
+          "url": article.url,
+          "datePublished": article.published,
+          "author": {
+            "@type": "Person",
+            "name": article.author || "NewsReact"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "NewsReact",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://newzzzzzz.netlify.app/logo192.png"
+            }
+          },
+          "image": article.image ? {
+            "@type": "ImageObject",
+            "url": article.image
+          } : undefined,
+          "articleSection": article.category
+        }))
+      };
+
+      const schemaScript = document.getElementById('news-articles-schema');
+      if (schemaScript) {
+        schemaScript.textContent = JSON.stringify(schema);
+      }
+    }
+
+    // Update breadcrumb schema based on category
+    function updateBreadcrumbSchema(category) {
+      const breadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://newzzzzzz.netlify.app/"
+          }
+        ]
+      }; -->
+
+      <!-- if (category && category !== 'general') {
+        breadcrumb.itemListElement.push({
+          "@type": "ListItem",
+          "position": 2,
+          "name": category.charAt(0).toUpperCase() + category.slice(1),
+          "item": `https://newzzzzzz.netlify.app/?category=${category}`
+        });
+      }
+
+      const schemaScript = document.getElementById('breadcrumb-schema');
+      if (schemaScript) {
+        schemaScript.textContent = JSON.stringify(breadcrumb);
+      }
+    } -->
+
+    <!-- // Performance monitoring
+    window.addEventListener('load', function() {
+      if ('performance' in window) {
+        const perfData = performance.getEntriesByType('navigation')[0];
+        // Send performance data to analytics if needed
+        console.log('Page load performance:', {
+          domContentLoaded: perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+          loadComplete: perfData.loadEventEnd - perfData.loadEventStart
+        });
+      }
+    });
+
+    // Error tracking
+    window.addEventListener('error', function(event) {
+      console.error('JavaScript error:', event.error);
+      // Send error data to analytics if needed
+    });
+
+    // Make schema update functions globally available
+    window.updateNewsSchema = updateNewsSchema;
+    window.updateBreadcrumbSchema = updateBreadcrumbSchema;
+  </script>
+</body>
+</html> --> 
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#667eea" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  
+  <!-- Primary Meta Tags -->
+  <title>NewsReact - Stay Updated with Latest News | Real-time News App</title>
+  <meta name="title" content="NewsReact - Stay Updated with Latest News | Real-time News App" />
+  <meta name="description" content="Discover the latest news from around the world with NewsReact. Get real-time updates on technology, sports, business, entertainment, health, and science. Built with React and modern web technologies." />
+  <meta name="keywords" content="news, latest news, breaking news, world news, technology news, sports news, business news, entertainment news, React news app, real-time news" />
+  <meta name="author" content="Vibek Sahu" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://newzzzzzz.netlify.app/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NewsReact" />
+  <meta property="og:url" content="https://newzzzzzz.netlify.app/" />
+  <meta property="og:title" content="NewsReact - Stay Updated with Latest News | Real-time News App" />
+  <meta property="og:description" content="Discover the latest news from around the world with NewsReact. Get real-time updates on technology, sports, business, entertainment, health, and science." />
+  <meta property="og:image" content="https://newzzzzzz.netlify.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NewsReact - Latest News Application" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://newzzzzzz.netlify.app/" />
+  <meta property="twitter:title" content="NewsReact - Stay Updated with Latest News | Real-time News App" />
+  <meta property="twitter:description" content="Discover the latest news from around the world with NewsReact. Get real-time updates on technology, sports, business, entertainment, health, and science." />
+  <meta property="twitter:image" content="https://newzzzzzz.netlify.app/twitter-image.png" />
+  <meta property="twitter:image:alt" content="NewsReact - Latest News Application" />
+  <meta property="twitter:creator" content="@vibeksahu" />
+  <meta property="twitter:site" content="@vibeksahu" />
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/android-chrome-512x512.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.currentsapi.services" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- DNS Prefetch for performance -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NewsReact",
+    "description": "Stay updated with latest news from around the world",
+    "url": "https://newzzzzzz.netlify.app/",
+    "author": {
+      "@type": "Person",
+      "name": "Vibek Sahu",
+      "email": "vibeksahu055@gmail.com",
+      "url": "https://github.com/VIBEKSAHU"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NewsReact",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newzzzzzz.netlify.app/logo192.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://newzzzzzz.netlify.app/?category={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "sameAs": [
+      "https://github.com/VIBEKSAHU",
+      "https://linkedin.com/in/vibeksahu",
+      "https://instagram.com/vibeksahu_"
+    ]
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "NewsReact",
+    "description": "Real-time news application built with React",
+    "url": "https://newzzzzzz.netlify.app/",
+    "applicationCategory": "NewsApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Modern web browser with JavaScript enabled",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Vibek Sahu"
+    },
+    "screenshot": "https://newzzzzzz.netlify.app/screenshot.png"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema (will be dynamically updated) -->
+  <script type="application/ld+json" id="breadcrumb-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://newzzzzzz.netlify.app/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Critical CSS (inline for performance) -->
+  <style>
+    /* Critical above-the-fold styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #0f0f23;
+      color: #2d3748;
+    }
+    
+    .loading-initial {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .navbar-container {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    /* Skip to main content for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 10000;
+      border-radius: 4px;
+    }
+    
+    .skip-link:focus {
+      top: 6px;
+    }
+
+    /* Remove loading screen smoothly */
+    .loading-initial.fade-out {
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Skip to main content for screen readers -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Initial loading screen -->
+  <div id="loading-initial" class="loading-initial">
+    <div>
+      <div>📰 NewsReact</div>
+      <div style="font-size: 0.9rem; margin-top: 8px; opacity: 0.8;">Loading latest news...</div>
+    </div>
+  </div>
+  
+  <!-- Main app root -->
+  <div id="root"></div>
+  
+  <!-- Structured data for news articles (dynamically updated) -->
+  <script type="application/ld+json" id="news-articles-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": []
+  }
+  </script>
+
+  <!-- App functionality scripts -->
+  <script type="text/javascript">
+    // Remove loading screen when React app loads
+    window.addEventListener('load', function() {
+      const loading = document.getElementById('loading-initial');
+      if (loading) {
+        loading.classList.add('fade-out');
+        setTimeout(() => loading.remove(), 300);
+      }
+    });
+
+    // Update structured data dynamically
+    function updateNewsSchema(articles) {
+      try {
+        const schema = {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": articles.slice(0, 10).map((article, index) => ({
+            "@type": "NewsArticle",
+            "position": index + 1,
+            "headline": article.title,
+            "description": article.description,
+            "url": article.url,
+            "datePublished": article.published,
+            "author": {
+              "@type": "Person",
+              "name": article.author || "NewsReact"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "NewsReact",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://newzzzzzz.netlify.app/logo192.png"
+              }
+            },
+            "image": article.image ? {
+              "@type": "ImageObject",
+              "url": article.image
+            } : undefined,
+            "articleSection": article.category
+          }))
+        };
+
+        const schemaScript = document.getElementById('news-articles-schema');
+        if (schemaScript) {
+          schemaScript.textContent = JSON.stringify(schema);
+        }
+      } catch (error) {
+        console.warn('Failed to update news schema:', error);
+      }
+    }
+
+    // Update breadcrumb schema based on category
+    function updateBreadcrumbSchema(category) {
+      try {
+        const breadcrumb = {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://newzzzzzz.netlify.app/"
+            }
+          ]
+        };
+
+        if (category && category !== 'general') {
+          breadcrumb.itemListElement.push({
+            "@type": "ListItem",
+            "position": 2,
+            "name": category.charAt(0).toUpperCase() + category.slice(1),
+            "item": `https://newzzzzzz.netlify.app/?category=${category}`
+          });
+        }
+
+        const schemaScript = document.getElementById('breadcrumb-schema');
+        if (schemaScript) {
+          schemaScript.textContent = JSON.stringify(breadcrumb);
+        }
+      } catch (error) {
+        console.warn('Failed to update breadcrumb schema:', error);
+      }
+    }
+
+    // Error tracking
+    window.addEventListener('error', function(event) {
+      console.error('JavaScript error:', event.error);
+    });
+
+    // Make schema update functions globally available
+    window.updateNewsSchema = updateNewsSchema;
+    window.updateBreadcrumbSchema = updateBreadcrumbSchema;
+
+    // Performance tracking (optional)
+    if (typeof performance !== 'undefined' && performance.getEntriesByType) {
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          const perfData = performance.getEntriesByType('navigation')[0];
+          if (perfData) {
+            console.log('Performance:', {
+              domContentLoaded: Math.round(perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart),
+              loadComplete: Math.round(perfData.loadEventEnd - perfData.loadEventStart)
+            });
+          }
+        }, 0);
+      });
+    }
+  </script>
+</body>
 </html>

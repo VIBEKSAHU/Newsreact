@@ -21,7 +21,7 @@ export default function News({category}) {
   };
 
   useEffect(() => {
-    // setNews([]); // Clear previous news
+    setNews([]); // Clear previous news
     getNews();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
