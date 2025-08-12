@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
-export default function News({ category }) {
+export default function News({category}) {
   const [news, setNews] = useState([]);
   const [error, setError] = useState(null);
 
@@ -21,7 +21,7 @@ export default function News({ category }) {
   };
 
   useEffect(() => {
-    setNews([]); // Clear previous news
+    // setNews([]); // Clear previous news
     getNews();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
