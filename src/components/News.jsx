@@ -1,13 +1,13 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
-export default function News() {
+export default function News({ category }) {
   const [news, setNews] = useState([]);
   const [error, setError] = useState(null);
 
   const getNews = async () => {
     try {
-      const response = await axios.get(`/api/fetchNews`);
+      const response = await axios.get(`/api/fetchNews?category=${category}`);
       if (response.data.news) {
         setNews(response.data.news);
       } else {
@@ -21,8 +21,9 @@ export default function News() {
   };
 
   useEffect(() => {
+    setNews([]); // Clear previous news
     getNews();
-  }, []);
+  }, [category]);
 
   return (
     <div className="content">
@@ -30,7 +31,13 @@ export default function News() {
       {news && news.length > 0 ? (
         news.map((e, index) => (
           <div className="main" key={index}>
-            <img src={e.image} alt={e.title} />
+            {/* <img src={e.image} alt={e.title} /> */}
+            {e.image ? (
+              <img src={e.image} alt={e.title} />
+            ) : (
+              <img src="/placeholder.jpg" alt="No preview available" />
+            )}
+
             <h6 className='a'>{e.title}</h6>
             <div className="a">
               <p className='desc'>{e.description}</p>

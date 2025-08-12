@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Moon+Dance&family=Oswald:wght@300&family=Roboto:ital,wght@0,100;0,300;1,300&family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&family=Roboto:wght@500&display=swap');
 
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 
 #root{
@@ -10,7 +13,7 @@
 
 /*NAV-BAR STYLE STARTS */
 
-nav.mainbar{
+/* nav.mainbar{
   background-color:rgba(209, 239, 245, 0.907);
   border-radius: 300px;
   width: 100%;
@@ -70,11 +73,185 @@ li{
 }
 .menu ul li:hover{
   /* transform-origin: left; */
-  text-decoration: none;
+  /* text-decoration: none;
   transition: 0.5s;
-  background-color: rgb(38, 116, 167);
-  
+  background-color: rgb(38, 116, 167); */
+/* } */ 
+
+
+/* .mainbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #222;
+  color: white;
 }
+
+.logo h2 {
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.bt {
+  background: none;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.bt.active-cat {
+  background: #ff9800;
+  border-radius: 4px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+/* @media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+} */ 
+ /* ===== Base Navbar Styling ===== */
+.mainbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(209, 239, 245, 0.95);
+  border-radius: 50px;
+  box-shadow: rgb(125, 192, 119) 0px 10px 30px -10px,
+              rgb(255, 255, 255) 0px 5px 15px -5px;
+  position: relative;
+}
+
+/* Logo - keeping your old gradient style */
+.logo h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* min 1.5rem, max 2.5rem */
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(rgb(229, 255, 0), rgb(255, 19, 19));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: clamp(2rem, 7vw, 4rem); /* scales proportionally */
+}
+
+
+/* Menu styling */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li {
+  font-size: 1.2rem;
+}
+
+.menu li a {
+  text-transform: capitalize;
+  color: rgb(0, 38, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: rgba(0, 251, 255, 0.2);
+  color: rgb(0, 0, 150);
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.bt {
+  background-color: rgba(0, 251, 255, 0.779);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bt:hover {
+  background-color: rgba(0, 200, 200, 0.85);
+  transform: scale(1.05);
+}
+
+.bt.active-cat {
+  background: #ff9800;
+  color: white;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: rgb(0, 38, 255);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(209, 239, 245, 0.98);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+  
 /* NAVBAR ENDS */
 
 
