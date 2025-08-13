@@ -27,7 +27,7 @@ export default function News({category}) {
   }, [category]);
 
   return (
-    <div className="content">
+    <div className="card">
       {error && <p style={{ color: 'red', textAlign: 'center', fontWeight: 'bold' }}>{error}</p>}
       {news && news.length > 0 ? (
         news.map((e, index) => (
