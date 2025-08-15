@@ -31,7 +31,7 @@ export default function ModernFooter() {
         },
         { 
             name: 'LinkedIn', 
-            href: 'https://linkedin.com/in/vibeksahu', 
+            href: 'https://www.linkedin.com/in/vibek-sahu/', 
             icon: FaLinkedin,
             color: '#0077b5'
         },
