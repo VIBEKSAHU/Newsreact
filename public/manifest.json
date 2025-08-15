@@ -1,6 +1,6 @@
 {
-  "short_name": "NewsReact",
-  "name": "NewsReact - Latest News App",
+  "short_name": "SaandarNews",
+  "name": "SaandarNews - Latest News App",
   "description": "Stay updated with the latest news from around the world. Get real-time updates on technology, sports, business, entertainment, health, and science.",
   "icons": [
     {
@@ -9,13 +9,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"

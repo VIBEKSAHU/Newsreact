@@ -9,7 +9,7 @@ export default function ModernFooter() {
     const currentYear = new Date().getFullYear();
     
     const quickLinks = [
-        { name: 'About', href: '/about' },
+        { name: 'About the Creator', href: 'https://vibekportfolio.netlify.app/' },
         { name: 'Contact', href: '/contact' },
         { name: 'Privacy Policy', href: '/privacy' },
         { name: 'Terms of Use', href: '/terms' }
