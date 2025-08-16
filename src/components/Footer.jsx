@@ -7,43 +7,43 @@ import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaEnvelope, FaRocket, FaC
 
 export default function ModernFooter() {
     const currentYear = new Date().getFullYear();
-    
+
     const quickLinks = [
         { name: 'About the Creator', href: 'https://vibekportfolio.netlify.app/' },
         { name: 'Contact', href: '/contact' },
         { name: 'Privacy Policy', href: '/privacy' },
         { name: 'Terms of Use', href: '/terms' }
     ];
-    
+
     const categories = [
         { name: 'General', href: '/?category=general' },
         { name: 'Technology', href: '/?category=technology' },
         { name: 'Sports', href: '/?category=sports' },
         { name: 'Business', href: '/?category=business' }
     ];
-    
+
     const socialLinks = [
-        { 
-            name: 'GitHub', 
-            href: 'https://github.com/VIBEKSAHU', 
+        {
+            name: 'GitHub',
+            href: 'https://github.com/VIBEKSAHU',
             icon: FaGithub,
             color: '#333'
         },
-        { 
-            name: 'LinkedIn', 
-            href: 'https://www.linkedin.com/in/vibek-sahu/', 
+        {
+            name: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/vibek-sahu/',
             icon: FaLinkedin,
             color: '#0077b5'
         },
-        { 
-            name: 'Instagram', 
-            href: 'https://instagram.com/vibeksahu_', 
+        {
+            name: 'Instagram',
+            href: 'https://instagram.com/vibeksahu_',
             icon: FaInstagram,
             color: '#e4405f'
         },
-        { 
-            name: 'Twitter', 
-            href: 'https://twitter.com/vibeksahu', 
+        {
+            name: 'Twitter',
+            href: 'https://x.com/VibekSahuViper',
             icon: FaTwitter,
             color: '#1da1f2'
         }
@@ -59,21 +59,24 @@ export default function ModernFooter() {
                             <span>N</span>ewsReact
                         </h2>
                         <p className="footer-tagline">
-                            Stay informed with the latest news from around the world. 
+                            Stay informed with the latest news from around the world.
                             Built with React and powered by modern web technologies.
                         </p>
                     </div>
-                    
+
                     <div className="newsletter-signup">
                         <h4>Stay Updated</h4>
                         <div className="newsletter-form">
-                            <input 
-                                type="email" 
+                            <input
+                                type="email"
                                 placeholder="Enter your email"
                                 className="newsletter-input"
                             />
                             <button className="newsletter-btn">
-                                <FaRocket />
+                                <a href="mailto:vibeksahu055@gmail.com">
+                                    <FaRocket />
+
+                                </a>
                             </button>
                         </div>
                         <p className="newsletter-note">
@@ -121,12 +124,12 @@ export default function ModernFooter() {
                             <span>Full Stack Developer</span>
                         </p>
                     </div>
-                    
+
                     <div className="social-icons">
                         {socialLinks.map((social, index) => {
                             const IconComponent = social.icon;
                             return (
-                                <a 
+                                <a
                                     key={index}
                                     href={social.href}
                                     className="social-icon"
@@ -150,7 +153,7 @@ export default function ModernFooter() {
                         © {currentYear} NewsReact by Vibek Sahu. Made with{' '}
                         <FaHeart className="heart-icon" /> in India
                     </p>
-                    
+
                     <div className="tech-stack">
                         <span className="tech-badge">React</span>
                         <span className="tech-badge">Netlify</span>
@@ -160,7 +163,7 @@ export default function ModernFooter() {
             </div>
 
             {/* Back to Top Button */}
-            <button 
+            <button
                 className="back-to-top"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 aria-label="Scroll to top"
